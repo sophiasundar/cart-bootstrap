@@ -1,7 +1,7 @@
 const productdata = [
     {
      "productName": "Fantastic Steel Fish",
-     "productImg": "http://placeimg.com/640/480/city",
+     "productImg": "https://m.media-amazon.com/images/I/91AbwNX2xJL._SX679_.jpg",
      "productPrice": "173.00",
      "productRating": 21362,
      "sale": true,
@@ -10,7 +10,7 @@ const productdata = [
     },
     {
      "productName": "Handmade Concrete Fish",
-     "productImg": "http://placeimg.com/640/480/animals",
+     "productImg": "https://m.media-amazon.com/images/I/61UfZzdTwML._SX679_.jpg",
      "productPrice": "234.00",
      "productRating": 22729,
      "sale": false,
@@ -19,7 +19,7 @@ const productdata = [
     },
     {
      "productName": "Fantastic Granite Chair",
-     "productImg": "http://placeimg.com/640/480/nightlife",
+     "productImg": "https://m.media-amazon.com/images/I/41liaI5zqDL._SX300_SY300_QL70_FMwebp_.jpg",
      "productPrice": "34.00",
      "productRating": 46460,
      "sale": false,
@@ -28,7 +28,7 @@ const productdata = [
     },
     {
      "productName": "Gorgeous Plastic Chair",
-     "productImg": "http://placeimg.com/640/480/nature",
+     "productImg": "https://m.media-amazon.com/images/I/31W6vOdnPoL._SX300_SY300_QL70_FMwebp_.jpg",
      "productPrice": "419.00",
      "productRating": 53485,
      "sale": false,
@@ -37,7 +37,7 @@ const productdata = [
     },
     {
      "productName": "Unbranded Concrete Soap",
-     "productImg": "http://placeimg.com/640/480/transport",
+     "productImg": "",
      "productPrice": "501.00",
      "productRating": 20605,
      "sale": true,
