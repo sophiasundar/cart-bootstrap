@@ -6,6 +6,8 @@ import Home from './Components/Home';
 import Nav from './Components/Nav';
 import Rating from './Components/Rating';
 
+
+
 function App() {
     // const [cartItems, setCartItems] = useState([])
 
