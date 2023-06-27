@@ -37,7 +37,7 @@ const productdata = [
     },
     {
      "productName": "Unbranded Concrete Soap",
-     "productImg": "",
+     "productImg": "https://m.media-amazon.com/images/I/61T7RIh2RXS._SX679_.jpg",
      "productPrice": "501.00",
      "productRating": 20605,
      "sale": true,
