@@ -4,6 +4,7 @@ import Cart from './Components/Cart';
 import Header from './Components/Header';
 import Home from './Components/Home';
 import Nav from './Components/Nav';
+import ProductData from './Components/ProductData';
 import Rating from './Components/Rating';
 
 
@@ -27,7 +28,7 @@ function App() {
   return (
     <div className="App">
      <Header></Header>
-     <productdata></productdata>
+     
      {/* <Nav></Nav> */}
      {/* <Nav cartItems={cartItems}/> */}
 
