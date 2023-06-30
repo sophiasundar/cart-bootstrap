@@ -1,12 +1,11 @@
-const productdata = [
+const ProductData = [
     {
      "productName": "Fantastic Steel Fish",
      "productImg": "https://m.media-amazon.com/images/I/91AbwNX2xJL._SX679_.jpg",
      "productPrice": "173.00",
      "productRating": 21362,
      "sale": true,
-     "productSalePrice": "201.00",
-     "id": "1"
+     "productSalePrice": "201.00",     "id": "1"
     },
     {
      "productName": "Handmade Concrete Fish",
@@ -136,4 +135,4 @@ const productdata = [
     }
    ];
    
-   export default productdata;
+   export default ProductData;

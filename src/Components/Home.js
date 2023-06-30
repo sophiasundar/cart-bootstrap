@@ -17,6 +17,7 @@ function Home({productdata, addItem, cartItems}) {
                                   salePrice={product.productSalePrice}
                                   key={product.id}
                                   id={product.id}
+                                  
                                   addItem = {addItem}
                                   cartItems = {cartItems}
                               />
