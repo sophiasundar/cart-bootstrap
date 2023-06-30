@@ -27,6 +27,7 @@ function App() {
   return (
     <div className="App">
      <Header></Header>
+     <productdata></productdata>
      {/* <Nav></Nav> */}
      {/* <Nav cartItems={cartItems}/> */}
 
