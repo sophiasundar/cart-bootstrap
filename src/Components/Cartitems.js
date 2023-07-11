@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css"
-import ""
+import "./Cartitems.css"
 
    const Cartitem = (props) => {
     const removehandler= ()=>{

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
-
-
+import Cartitem from "./Cartitems";
+import "./Cartmodal.css"
 
 const Backdrop = (props) => {
     return <div className="backdrop" onClick={props.onclick}></div>;
