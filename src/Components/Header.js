@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import React from "react";
 
 
+
 const Header=(props)=>{
     return(
         <React.Fragment>
@@ -12,7 +13,8 @@ const Header=(props)=>{
             </nav>
 
             <div className="jumbotron-fluid text-center text-white bg-dark" style={{ padding: "90px" }}>
-        <p className="display-1" style={{ fontWeight: "bold" }}>Shop in style</p>
+        <p className="display-1" style={{ fontWeight: "bold" }}>Shop in style</p>  
+
         <p className="mutdis text-muted">With this shop hompeage template</p>
            </div>
         </React.Fragment>
