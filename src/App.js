@@ -5,8 +5,9 @@ import React, {useState} from "react";
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Rating from './Components/Rating';
-import Items from './items'
-import Cartmodel from './Components/CartModel';
+import Cardss from './Components/Cardss';
+// import Items from './items'
+// import Cartmodel from './Components/CartModel';
 
 const item = [
   {
@@ -69,51 +70,28 @@ const item = [
 
 function App() {
    
-  const[cart,setcart]=useState(false);
-  const [cartitems, setcartitems] = useState([]);
-  const [data, setdata]= useState(item);
-
-   const addtocarthandler =(props)=>{
-      setcartitems( prevSelected => [...prevSelected, props]);
-      const index = data.indexOf(props);
-      setdata([...data.slice(0,index),{...props, disabled:"true"} ,...data.slice( index+1 ,data.length)]);
-  };
-  
-  const removefromcart = props =>{
-    const UpdatedItems = cartitems.filter(item => item.id !== props.id);
-    setcartitems([...UpdatedItems]);
-    const index = data.findIndex((item) => item.id === props.id);
-    setdata([...data.slice(0,index),{...props, disabled:"false"} ,...data.slice( index+1 ,data.length)]);
-  }
-
-  const setcarthandler = () =>{
-    setcart(true);
-  }
-  
-  const closecarthandler = () =>{
-    setcart(false);
-  }
-
-
+ 
  
 
 
   return (
-    
+    <>
+      <Header></Header>
     <div className="App">
-        <Cartmodel></Cartmodel>
-      {cart && <Cartmodel onclick={closecarthandler} value={cartitems} onremove={removefromcart}/>}
-    <Header onclick={setcarthandler} noofitems={cartitems.length}/>
-    <br/>
-      <Items onclick={addtocarthandler} data={data}/>
-     {/* <Header></Header> */}
+        {/* <Cartmodel></Cartmodel> */}
+      
+      {
+
+        item.map((element)=>{
+          return <Cardss element={element}/>
+        })
+      }
+        
+     <Footer></Footer>
+    
      
-     <Rating></Rating>
-     {/* <Footer></Footer> */}
-    
-    
     </div>
-  
+  </>
   );
 }
 

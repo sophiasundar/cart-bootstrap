@@ -138,12 +138,12 @@ img,h3,h5{
 .cart-item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center !important;
   padding: 1rem 0;
   margin: 1rem 0;
 }
 .price {
-  font-weight: bold;
+  font-weight: italic;
   color: #8a2b06;
 }
 .btn-danger {
