@@ -12,6 +12,7 @@ const Cardss=({element})=>{
         <>
           <li className="cart-item bg-light text-dark" >
           <div>
+          <div className="img" style={{ height: 150 }}>450 X300</div>
             <h2>{name}</h2>
             <h3><Rating></Rating></h3>
             <h4>{price}</h4>

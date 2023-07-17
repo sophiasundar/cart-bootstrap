@@ -1,7 +1,7 @@
 
 import './App.css';
 
-import React, {useState} from "react";
+// import React, {useState} from "react";
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Rating from './Components/Rating';
@@ -84,6 +84,7 @@ function App() {
 
         item.map((element)=>{
           return <Cardss element={element}/>
+          
         })
       }
         
