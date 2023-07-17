@@ -6,6 +6,8 @@ import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Rating from './Components/Rating';
 import Cardss from './Components/Cardss';
+import store from './Components/utils/store';
+import { Provider } from 'react-redux';
 // import Items from './items'
 // import Cartmodel from './Components/CartModel';
 
@@ -76,6 +78,7 @@ function App() {
 
   return (
     <>
+    <Provider store={store}>
       <Header></Header>
     <div className="App">
         {/* <Cartmodel></Cartmodel> */}
@@ -92,6 +95,7 @@ function App() {
     
      
     </div>
+    </Provider>
   </>
   );
 }
