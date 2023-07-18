@@ -78,7 +78,7 @@ function App() {
 
   return (
     <>
-    <Provider store={store}>
+    {/* <Provider store={store}> */}
       <Header></Header>
     <div className="App">
         {/* <Cartmodel></Cartmodel> */}
@@ -95,7 +95,7 @@ function App() {
     
      
     </div>
-    </Provider>
+    {/* </Provider> provider for joining store and app */}
   </>
   );
 }

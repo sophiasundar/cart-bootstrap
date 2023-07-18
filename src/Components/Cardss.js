@@ -20,7 +20,7 @@ const Cardss=({element})=>{
             <h2>{name}</h2>
             <h3><Rating></Rating></h3>
             <h4>{price}</h4>
-            <button className="btn-danger" >Add to cart</button>
+            <button className="btn-danger">Add to cart</button>
             {/* <button className="btn-danger" disabled ={element.disabled === "false" ? false : true} onClick={addtocart}><span>{element.disabled === "false" ? "Add to cart" : "Added to cart"}</span></button> */}
           </div>
         </div>
