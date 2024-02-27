@@ -78,24 +78,20 @@ function App() {
 
   return (
     <>
-    {/* <Provider store={store}> */}
+    <Provider store={store}>
       <Header></Header>
     <div className="App">
         {/* <Cartmodel></Cartmodel> */}
-      
       {
-
-        item.map((element)=>{
-          return <Cardss element={element}/>
+        item.map((element,index )=>{
+          return <Cardss element={element} key ={index} />
           
         })
       }
-        
-     <Footer></Footer>
-    
-     
+        <Footer></Footer>
     </div>
-    {/* </Provider> provider for joining store and app */}
+    </Provider> 
+    {/* // provider for joining store and app */}
   </>
   );
 }

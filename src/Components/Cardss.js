@@ -1,17 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./Cartitems.css"
 import Rating from "./Rating"
-
+import { useSelector } from "react-redux"
 
 const Cardss=({element})=>{
     console.log(element)  
     
     const{name,price}=element  
 
+    const CartItems=  useSelector(store=>store.cart.items)
 
-  //   const addtocart = ()=>{
-  //     element.onclick(element.item);
-  // }
+    const addtocart = ()=>{
+      onclick(element.CartItems);
+  }
     return(
         <>
         <div className="col-6 col-md-4 col-lg-3 p-3">
@@ -20,8 +21,15 @@ const Cardss=({element})=>{
             <h2>{name}</h2>
             <h3><Rating></Rating></h3>
             <h4>{price}</h4>
-            <button className="btn-danger">Add to cart</button>
-            {/* <button className="btn-danger" disabled ={element.disabled === "false" ? false : true} onClick={addtocart}><span>{element.disabled === "false" ? "Add to cart" : "Added to cart"}</span></button> */}
+            
+            <button className="btn-danger" 
+            disabled ={element.disabled === "false" ? false : true} 
+            onClick={addtocart}
+             >
+            <span>
+              {element.disabled === "false" ? "Add to cart" : "Added to cart"}
+              </span>
+            </button>
           </div>
         </div>
         </>

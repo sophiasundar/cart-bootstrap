@@ -2,11 +2,15 @@ import { createSlice} from "@reduxjs/toolkit"
 
 
 const cartSlice=createSlice({
+    // name
+    // state
+    // reducers
     name:"cart",
     initialState:{
-        items:[]
+        items:["phone",'laptop','3']
     },
-
+      
+    // use reducers plural
     reducers:{
           addCart:(state,action)=>{  //reducer function
                state.items.push(action.payload) //add - push
@@ -20,6 +24,6 @@ const cartSlice=createSlice({
 // export actions
 export const {addCart,clearCart}=cartSlice.actions;  //destructing export
 
-//export reducer
+//export reducer only not reducers
 export default cartSlice.reducer;
 
