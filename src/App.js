@@ -4,7 +4,6 @@ import './App.css';
 // import React, {useState} from "react";
 import Footer from './Components/Footer';
 import Header from './Components/Header';
-import Rating from './Components/Rating';
 import Cardss from './Components/Cardss';
 import store from './Components/utils/store';
 import { Provider } from 'react-redux';
